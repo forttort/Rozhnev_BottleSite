@@ -1,3 +1,5 @@
-% rebase('layout.tpl')
+ё% rebase('layout.tpl')
 <h1>Контакты</h1>
-<p>Email: test@example.com</p>
+<p>Телефон: +7 (900) 123-45-67</p>
+<p>Email: shop@example.com</p>
+<p>Адрес: г. Москва, ул. Центральная, д. 10</p>
