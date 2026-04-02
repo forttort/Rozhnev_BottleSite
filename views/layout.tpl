@@ -2,15 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Магазин одежды</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Noir — магазин одежды</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/">Главная</a>
-        <a href="/about">О магазине</a>
-        <a href="/contact">Контакты</a>
-    </nav>
-    <hr>
-    {{!base}}
+    <header class="site-header">
+        <div class="logo">Maison Noir</div>
+        <nav class="site-nav">
+            <a href="/">Главная</a>
+            <a href="/about">О магазине</a>
+            <a href="/contact">Контакты</a>
+        </nav>
+    </header>
+    <main class="page-content">
+        {{!base}}
+    </main>
+    <footer class="site-footer">
+        <p>© Maison Noir, 2024</p>
+    </footer>
 </body>
 </html>

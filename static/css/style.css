@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+    --bg: #f8f6f3;
+    --text: #1c1c1c;
+    --muted: #6f6c68;
+    --brand: #111;
+    --accent: #e0d2bd;
+    --card: #fff;
+    --border: #ece7df;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 7vw;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.site-nav a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+    color: var(--text);
+}
+
+.page-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 7vw 80px;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    margin: 0 0 12px;
+    font-size: 36px;
+}
+
+.intro p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.products h2 {
+    font-size: 24px;
+    margin: 0 0 24px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: var(--brand);
+}
+
+.product-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.product-card strong {
+    margin-top: auto;
+    font-size: 18px;
+}
+
+.inner-page {
+    max-width: 700px;
+}
+
+.page-title {
+    margin: 0 0 16px;
+}
+
+.inner-page p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
+    border-top: 1px solid var(--border);
+}
+
+.contact-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.contact-list span {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: var(--muted);
+}
+
+.contact-list a:hover {
+    color: var(--text);
+}
+
+.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 7vw;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .site-nav a {
+        margin: 0 12px;
+    }
+
+    .contact-list li {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
