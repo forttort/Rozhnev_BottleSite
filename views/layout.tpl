@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
+    <!-- Шапка сайта -->
     <header class="site-header">
         <div class="logo">Maison Noir</div>
         <nav class="site-nav">
@@ -15,9 +16,11 @@
             <a href="/contact">Контакты</a>
         </nav>
     </header>
+    <!-- Основной контент подставляется через rebase -->
     <main class="page-content">
         {{!base}}
     </main>
+    <!-- Низ -->
     <footer class="site-footer">
         <p>© Maison Noir, 2024</p>
     </footer>
