@@ -211,19 +211,21 @@ a {
     font-size: 13px;
 }
 
-/* Адаптация под мобильные */
-@media (max-width: 640px) {
-    .site-header {
-        flex-direction: column;
-        gap: 12px;
-    }
+.btn {
+    padding: 12px 20px;
+    border: 1px solid var(--brand);
+    border-radius: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
 
-    .site-nav a {
-        margin: 0 12px;
-    }
+.btn-default {
+    background: var(--brand);
+    color: #fff;
+}
 
-    .contact-list li {
-        flex-direction: column;
-        gap: 6px;
-    }
+.btn-default:hover {
+    background: #333;
 }
