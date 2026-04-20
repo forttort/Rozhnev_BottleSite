@@ -44,9 +44,18 @@ PRODUCTS = [
 app = Bottle()
 
 
+def render_home():
+    return template("index", products=PRODUCTS)
+
+
 @app.route("/")
 def home():
-    return template("index", products=PRODUCTS)
+    return render_home()
+
+
+@app.get("/home")
+def home_alias():
+    return render_home()
 
 
 @app.route("/about")
