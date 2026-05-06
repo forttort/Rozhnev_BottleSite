@@ -1,0 +1,4 @@
+Test add(a, b) is OK
+Test sub(a, b) is OK
+Test mul(a, b) is OK
+Test div(a, b) is OK

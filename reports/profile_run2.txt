@@ -1,0 +1,161 @@
+Wed May  6 23:31:28 2026    reports/profile_run2.prof
+
+         86419 function calls (84084 primitive calls) in 11.309 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1268 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     85/1    0.001    0.000   11.309   11.309 {built-in method builtins.exec}
+        1    0.000    0.000   11.309   11.309 app.py:1(<module>)
+        1    0.000    0.000   11.262   11.262 bottle.py:3885(run)
+        1    0.000    0.000   11.261   11.261 bottle.py:3506(run)
+        1    0.000    0.000   11.251   11.251 socketserver.py:218(serve_forever)
+       25    0.001    0.000   11.246    0.450 selectors.py:385(select)
+       25   11.245    0.450   11.245    0.450 {method 'poll' of 'select.poll' objects}
+    102/5    0.000    0.000    0.054    0.011 <frozen importlib._bootstrap>:1360(_find_and_load)
+    102/5    0.000    0.000    0.054    0.011 <frozen importlib._bootstrap>:1308(_find_and_load_unlocked)
+     98/6    0.000    0.000    0.054    0.009 <frozen importlib._bootstrap>:914(_load_unlocked)
+     77/6    0.000    0.000    0.054    0.009 <frozen importlib._bootstrap_external>:753(exec_module)
+   234/11    0.000    0.000    0.052    0.005 <frozen importlib._bootstrap>:483(_call_with_frames_removed)
+        1    0.000    0.000    0.044    0.044 bottle.py:1(<module>)
+       77    0.000    0.000    0.021    0.000 <frozen importlib._bootstrap_external>:826(get_code)
+       77    0.000    0.000    0.015    0.000 <frozen importlib._bootstrap_external>:947(get_data)
+       80    0.013    0.000    0.013    0.000 {method 'read' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.009    0.009 client.py:1(<module>)
+    17/14    0.000    0.000    0.009    0.001 {built-in method builtins.__import__}
+       98    0.000    0.000    0.008    0.000 <frozen importlib._bootstrap>:809(module_from_spec)
+        1    0.000    0.000    0.008    0.008 tempfile.py:1(<module>)
+       18    0.000    0.000    0.008    0.000 <frozen importlib._bootstrap_external>:1051(create_module)
+       18    0.008    0.000    0.008    0.000 {built-in method _imp.create_dynamic}
+       56    0.000    0.000    0.007    0.000 __init__.py:330(_compile)
+       55    0.000    0.000    0.007    0.000 __init__.py:287(compile)
+       53    0.000    0.000    0.007    0.000 _compiler.py:757(compile)
+      361    0.002    0.000    0.006    0.000 {built-in method builtins.__build_class__}
+    24/20    0.000    0.000    0.006    0.000 <frozen importlib._bootstrap>:1401(_handle_fromlist)
+        1    0.000    0.000    0.006    0.006 simple_server.py:1(<module>)
+        1    0.000    0.000    0.006    0.006 shutil.py:1(<module>)
+       77    0.001    0.000    0.005    0.000 <frozen importlib._bootstrap_external>:509(_compile_bytecode)
+
+
+
+--- server/socket related ---
+Wed May  6 23:31:28 2026    reports/profile_run2.prof
+
+         86419 function calls (84084 primitive calls) in 11.309 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1268 to 109 due to restriction <'server|socket|bind|activate|serve|run'>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   11.262   11.262 bottle.py:3885(run)
+        1    0.000    0.000   11.261   11.261 bottle.py:3506(run)
+        1    0.000    0.000   11.251   11.251 socketserver.py:218(serve_forever)
+        1    0.000    0.000    0.006    0.006 simple_server.py:1(<module>)
+        2    0.000    0.000    0.005    0.002 socketserver.py:305(_handle_request_noblock)
+        2    0.000    0.000    0.005    0.002 socketserver.py:343(process_request)
+        2    0.000    0.000    0.005    0.002 socketserver.py:360(finish_request)
+        2    0.000    0.000    0.005    0.002 socketserver.py:760(__init__)
+        2    0.000    0.000    0.004    0.002 simple_server.py:111(handle)
+        2    0.000    0.000    0.004    0.002 handlers.py:128(run)
+        1    0.000    0.000    0.004    0.004 simple_server.py:146(make_server)
+        1    0.000    0.000    0.004    0.004 socketserver.py:450(__init__)
+        1    0.000    0.000    0.004    0.004 simple_server.py:48(server_bind)
+        1    0.000    0.000    0.004    0.004 server.py:146(server_bind)
+        1    0.000    0.000    0.003    0.003 server.py:1(<module>)
+        1    0.000    0.000    0.003    0.003 socket.py:799(getfqdn)
+        1    0.002    0.002    0.003    0.003 {built-in method _socket.gethostbyaddr}
+        1    0.000    0.000    0.001    0.001 socket.py:1(<module>)
+        1    0.000    0.000    0.001    0.001 socketserver.py:463(server_bind)
+        1    0.001    0.001    0.001    0.001 {method 'bind' of '_socket.socket' objects}
+        1    0.000    0.000    0.001    0.001 socketserver.py:1(<module>)
+        2    0.000    0.000    0.000    0.000 server.py:320(parse_request)
+        2    0.000    0.000    0.000    0.000 socketserver.py:505(get_request)
+        2    0.000    0.000    0.000    0.000 socket.py:291(accept)
+        2    0.000    0.000    0.000    0.000 simple_server.py:32(close)
+       10    0.000    0.000    0.000    0.000 socketserver.py:844(write)
+        3    0.000    0.000    0.000    0.000 socket.py:507(close)
+        2    0.000    0.000    0.000    0.000 server.py:605(log_request)
+        3    0.000    0.000    0.000    0.000 socket.py:503(_real_close)
+        2    0.000    0.000    0.000    0.000 server.py:635(log_message)
+        1    0.000    0.000    0.000    0.000 socketserver.py:489(server_close)
+        3    0.000    0.000    0.000    0.000 {function socket.close at 0x1010a62a0}
+      248    0.000    0.000    0.000    0.000 socket.py:81(<lambda>)
+       10    0.000    0.000    0.000    0.000 {method 'sendall' of '_socket.socket' objects}
+      249    0.000    0.000    0.000    0.000 socket.py:86(<lambda>)
+        2    0.000    0.000    0.000    0.000 simple_server.py:75(get_environ)
+        2    0.000    0.000    0.000    0.000 socketserver.py:809(setup)
+      250    0.000    0.000    0.000    0.000 socket.py:91(<lambda>)
+      251    0.000    0.000    0.000    0.000 socket.py:96(<lambda>)
+        2    0.000    0.000    0.000    0.000 socket.py:307(makefile)
+        1    0.000    0.000    0.000    0.000 server.py:199(BaseHTTPRequestHandler)
+        2    0.000    0.000    0.000    0.000 socket.py:523(family)
+        2    0.000    0.000    0.000    0.000 socketserver.py:513(shutdown_request)
+        4    0.000    0.000    0.000    0.000 socket.py:102(_intenum_converter)
+        3    0.000    0.000    0.000    0.000 socket.py:224(__init__)
+       24    0.000    0.000    0.000    0.000 socketserver.py:257(service_actions)
+        2    0.000    0.000    0.000    0.000 socketserver.py:822(finish)
+        2    0.000    0.000    0.000    0.000 {method '_accept' of '_socket.socket' objects}
+        2    0.000    0.000    0.000    0.000 socket.py:712(readinto)
+        2    0.000    0.000    0.000    0.000 {method 'shutdown' of '_socket.socket' objects}
+        2    0.000    0.000    0.000    0.000 socketserver.py:523(close_request)
+        2    0.000    0.000    0.000    0.000 socket.py:700(__init__)
+        2    0.000    0.000    0.000    0.000 server.py:671(log_date_time_string)
+        2    0.000    0.000    0.000    0.000 {method 'recv_into' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 socketserver.py:203(__init__)
+        2    0.000    0.000    0.000    0.000 socket.py:788(close)
+        2    0.000    0.000    0.000    0.000 socket.py:529(type)
+        1    0.000    0.000    0.000    0.000 socket.py:218(socket)
+        1    0.000    0.000    0.000    0.000 socketserver.py:481(server_activate)
+        2    0.000    0.000    0.000    0.000 simple_server.py:108(get_stderr)
+        1    0.000    0.000    0.000    0.000 {method 'setsockopt' of '_socket.socket' objects}
+        6    0.000    0.000    0.000    0.000 server.py:357(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {method 'getsockname' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 {method 'listen' of '_socket.socket' objects}
+        4    0.000    0.000    0.000    0.000 socket.py:750(readable)
+        1    0.000    0.000    0.000    0.000 server.py:1043(CGIHTTPRequestHandler)
+        2    0.000    0.000    0.000    0.000 socket.py:497(_decref_socketios)
+        1    0.000    0.000    0.000    0.000 socket.py:683(SocketIO)
+        6    0.000    0.000    0.000    0.000 server.py:359(<genexpr>)
+        1    0.000    0.000    0.000    0.000 server.py:706(SimpleHTTPRequestHandler)
+        1    0.000    0.000    0.000    0.000 socketserver.py:155(BaseServer)
+        4    0.000    0.000    0.000    0.000 {method 'truncate' of '_io.StringIO' objects}
+        1    0.000    0.000    0.000    0.000 socketserver.py:392(TCPServer)
+        1    0.000    0.000    0.000    0.000 simple_server.py:53(setup_environ)
+        1    0.000    0.000    0.000    0.000 simple_server.py:71(WSGIRequestHandler)
+        1    0.000    0.000    0.000    0.000 socketserver.py:645(_Threads)
+        1    0.000    0.000    0.000    0.000 simple_server.py:28(ServerHandler)
+        1    0.000    0.000    0.000    0.000 simple_server.py:42(WSGIServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:497(fileno)
+        1    0.000    0.000    0.000    0.000 socketserver.py:557(ForkingMixIn)
+        1    0.000    0.000    0.000    0.000 server.py:158(HTTPSServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:678(ThreadingMixIn)
+        1    0.000    0.000    0.000    0.000 socketserver.py:528(UDPServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:788(StreamRequestHandler)
+        2    0.000    0.000    0.000    0.000 socketserver.py:838(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method _socket.getdefaulttimeout}
+        2    0.000    0.000    0.000    0.000 {method 'gettimeout' of '_socket.socket' objects}
+        2    0.000    0.000    0.000    0.000 simple_server.py:63(get_app)
+        1    0.000    0.000    0.000    0.000 server.py:141(HTTPServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:742(BaseRequestHandler)
+        1    0.000    0.000    0.000    0.000 socketserver.py:833(_SocketWriter)
+        1    0.000    0.000    0.000    0.000 socketserver.py:667(_NoThreads)
+        1    0.000    0.000    0.000    0.000 simple_server.py:66(set_app)
+        1    0.000    0.000    0.000    0.000 socketserver.py:852(DatagramRequestHandler)
+        1    0.000    0.000    0.000    0.000 socket.py:215(_GiveupOnSendfile)
+        2    0.000    0.000    0.000    0.000 socketserver.py:335(verify_request)
+        1    0.000    0.000    0.000    0.000 server.py:154(ThreadingHTTPServer)
+        1    0.000    0.000    0.000    0.000 {method 'fileno' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 server.py:195(ThreadingHTTPSServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:727(UnixStreamServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:719(ForkingUDPServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:730(UnixDatagramServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:720(ForkingTCPServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:723(ThreadingTCPServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:733(ThreadingUnixStreamServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:738(ForkingUnixStreamServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:740(ForkingUnixDatagramServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:735(ThreadingUnixDatagramServer)
+        1    0.000    0.000    0.000    0.000 socketserver.py:722(ThreadingUDPServer)
+
+

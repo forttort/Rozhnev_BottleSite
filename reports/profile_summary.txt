@@ -1,0 +1,6 @@
+Python cProfile summary for Bottle site
+Requests per run: GET / and POST /home with valid email
+run1: total=12.284963s, serve_forever=12.200636s, simple_server.server_bind=0.005681s, socket.bind=0.001244s
+run2: total=11.308762s, serve_forever=11.251075s, simple_server.server_bind=0.003778s, socket.bind=0.001105s
+Average inclusive server initialization time by simple_server.server_bind: 0.004729s
+Average raw socket.bind time: 0.001175s

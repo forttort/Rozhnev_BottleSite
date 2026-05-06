@@ -1,0 +1,11 @@
+test_add (utest_calc.CalcTest.test_add) ... ok
+test_div (utest_calc.CalcTest.test_div) ... ok
+test_mul (utest_calc.CalcTest.test_mul) ... ok
+test_sub (utest_calc.CalcTest.test_sub) ... ok
+test_correct_email_list (utest_myform_mail.MailFormTest.test_correct_email_list) ... ok
+test_incorrect_email_list (utest_myform_mail.MailFormTest.test_incorrect_email_list) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

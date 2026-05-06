@@ -1,0 +1,204 @@
+Comparison by cumulative time (run2 - run1), top changed functions
+-0.976230s run1=12.284950s run2=11.308720s app.py:1(<module>)
+-0.976220s run1=12.284954s run2=11.308734s ~:0(<built-in method builtins.exec>)
+-0.951698s run1=12.213091s run2=11.261394s bottle.py:3506(run)
+-0.951650s run1=12.213161s run2=11.261511s bottle.py:3885(run)
+-0.949561s run1=12.200636s run2=11.251075s socketserver.py:218(serve_forever)
+-0.949124s run1=12.193865s run2=11.244741s ~:0(<method 'poll' of 'select.poll' objects>)
+-0.948699s run1=12.194520s run2=11.245822s selectors.py:385(select)
+-0.027221s run1=0.081621s run2=0.054400s <frozen importlib._bootstrap>:1360(_find_and_load)
+-0.027200s run1=0.081515s run2=0.054315s <frozen importlib._bootstrap>:1308(_find_and_load_unlocked)
+-0.027070s run1=0.080919s run2=0.053849s <frozen importlib._bootstrap>:914(_load_unlocked)
+-0.027058s run1=0.080829s run2=0.053771s <frozen importlib._bootstrap_external>:753(exec_module)
+-0.025696s run1=0.077937s run2=0.052241s <frozen importlib._bootstrap>:483(_call_with_frames_removed)
+-0.024315s run1=0.068263s run2=0.043948s bottle.py:1(<module>)
+-0.017919s run1=0.038583s run2=0.020664s <frozen importlib._bootstrap_external>:826(get_code)
+-0.016577s run1=0.031082s run2=0.014506s <frozen importlib._bootstrap_external>:947(get_data)
+-0.016424s run1=0.029693s run2=0.013268s ~:0(<method 'read' of '_io.BufferedReader' objects>)
+-0.016332s run1=0.024095s run2=0.007763s tempfile.py:1(<module>)
+-0.013627s run1=0.019375s run2=0.005748s shutil.py:1(<module>)
+-0.011849s run1=0.020705s run2=0.008856s ~:0(<built-in method builtins.__import__>)
+-0.006860s run1=0.013084s run2=0.006223s <frozen importlib._bootstrap>:1401(_handle_fromlist)
+-0.004899s run1=0.007021s run2=0.002122s bz2.py:1(<module>)
+-0.004451s run1=0.012794s run2=0.008343s <frozen importlib._bootstrap>:809(module_from_spec)
+-0.004354s run1=0.011907s run2=0.007553s <frozen importlib._bootstrap_external>:1051(create_module)
+-0.004348s run1=0.011879s run2=0.007532s ~:0(<built-in method _imp.create_dynamic>)
+-0.003895s run1=0.008817s run2=0.004922s __init__.py:1(<module>)
+-0.002461s run1=0.007080s run2=0.004619s <frozen importlib._bootstrap>:1243(_find_spec)
+-0.002421s run1=0.006573s run2=0.004152s <frozen importlib._bootstrap_external>:1284(find_spec)
+-0.002418s run1=0.006533s run2=0.004115s <frozen importlib._bootstrap_external>:1255(_get_spec)
+-0.002374s run1=0.003218s run2=0.000843s __init__.py:71(search_function)
+-0.002221s run1=0.005231s run2=0.003010s <frozen importlib._bootstrap_external>:1357(find_spec)
+-0.002111s run1=0.002439s run2=0.000328s ~:0(<built-in method posix.listdir>)
+-0.002089s run1=0.002484s run2=0.000395s <frozen importlib._bootstrap_external>:1408(_fill_cache)
+-0.001908s run1=0.005728s run2=0.003820s simple_server.py:146(make_server)
+-0.001907s run1=0.005725s run2=0.003818s socketserver.py:450(__init__)
+-0.001903s run1=0.005681s run2=0.003778s simple_server.py:48(server_bind)
+-0.001900s run1=0.005675s run2=0.003775s server.py:146(server_bind)
+-0.001760s run1=0.004414s run2=0.002653s socket.py:799(getfqdn)
+-0.001760s run1=0.004408s run2=0.002648s ~:0(<built-in method _socket.gethostbyaddr>)
+-0.001505s run1=0.010963s run2=0.009458s client.py:1(<module>)
+-0.001218s run1=0.006478s run2=0.005260s <frozen importlib._bootstrap_external>:509(_compile_bytecode)
+
+Socket/server initialization candidates
+run1: socket.py:291 accept calls=2 tottime=0.000039s cumtime=0.000099s
+run1: ~:0 <built-in method _socket.gethostbyaddr> calls=1 tottime=0.001184s cumtime=0.004408s
+run1: ~:0 <built-in method _socket.getdefaulttimeout> calls=2 tottime=0.000000s cumtime=0.000000s
+run1: ~:0 <method '_accept' of '_socket.socket' objects> calls=2 tottime=0.000019s cumtime=0.000019s
+run1: ~:0 <method 'bind' of '_socket.socket' objects> calls=1 tottime=0.001244s cumtime=0.001244s
+run1: ~:0 <function socket.close at 0x10301e610> calls=3 tottime=0.000038s cumtime=0.000038s
+run1: ~:0 <method 'fileno' of '_socket.socket' objects> calls=1 tottime=0.000000s cumtime=0.000000s
+run1: ~:0 <method 'getsockname' of '_socket.socket' objects> calls=1 tottime=0.000003s cumtime=0.000003s
+run1: ~:0 <method 'listen' of '_socket.socket' objects> calls=1 tottime=0.000005s cumtime=0.000005s
+run1: ~:0 <method 'recv_into' of '_socket.socket' objects> calls=2 tottime=0.000008s cumtime=0.000008s
+run1: ~:0 <method 'sendall' of '_socket.socket' objects> calls=10 tottime=0.000036s cumtime=0.000036s
+run1: ~:0 <method 'gettimeout' of '_socket.socket' objects> calls=2 tottime=0.000001s cumtime=0.000001s
+run1: ~:0 <method 'setsockopt' of '_socket.socket' objects> calls=1 tottime=0.000003s cumtime=0.000003s
+run1: ~:0 <method 'shutdown' of '_socket.socket' objects> calls=2 tottime=0.000013s cumtime=0.000013s
+run1: socket.py:503 _real_close calls=3 tottime=0.000004s cumtime=0.000041s
+run1: socket.py:215 _GiveupOnSendfile calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socket.py:102 _intenum_converter calls=4 tottime=0.000006s cumtime=0.000018s
+run1: socket.py:523 family calls=2 tottime=0.000013s cumtime=0.000027s
+run1: socket.py:529 type calls=2 tottime=0.000002s cumtime=0.000006s
+run1: socket.py:224 __init__ calls=3 tottime=0.000028s cumtime=0.000028s
+run1: socket.py:81 <lambda> calls=248 tottime=0.000041s cumtime=0.000068s
+run1: socket.py:86 <lambda> calls=249 tottime=0.000036s cumtime=0.000061s
+run1: socket.py:91 <lambda> calls=250 tottime=0.000037s cumtime=0.000064s
+run1: socket.py:96 <lambda> calls=251 tottime=0.000037s cumtime=0.000063s
+run1: socket.py:507 close calls=3 tottime=0.000006s cumtime=0.000047s
+run1: socket.py:750 readable calls=4 tottime=0.000002s cumtime=0.000002s
+run1: socket.py:683 SocketIO calls=1 tottime=0.000002s cumtime=0.000002s
+run1: socket.py:497 _decref_socketios calls=2 tottime=0.000001s cumtime=0.000001s
+run1: socket.py:788 close calls=2 tottime=0.000004s cumtime=0.000006s
+run1: server.py:146 server_bind calls=1 tottime=0.000005s cumtime=0.005675s
+run1: socket.py:700 __init__ calls=2 tottime=0.000007s cumtime=0.000007s
+run1: socket.py:799 getfqdn calls=1 tottime=0.000005s cumtime=0.004414s
+run1: socketserver.py:489 server_close calls=1 tottime=0.000003s cumtime=0.000042s
+run1: socketserver.py:497 fileno calls=1 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:505 get_request calls=2 tottime=0.000021s cumtime=0.000120s
+run1: socketserver.py:742 BaseRequestHandler calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:788 StreamRequestHandler calls=1 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:833 _SocketWriter calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:513 shutdown_request calls=2 tottime=0.000004s cumtime=0.000026s
+run1: socketserver.py:450 __init__ calls=1 tottime=0.000007s cumtime=0.005725s
+run1: socketserver.py:822 finish calls=2 tottime=0.000004s cumtime=0.000013s
+run1: socketserver.py:719 ForkingUDPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:720 ForkingTCPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:722 ThreadingUDPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:723 ThreadingTCPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:733 ThreadingUnixStreamServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:735 ThreadingUnixDatagramServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:738 ForkingUnixStreamServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:740 ForkingUnixDatagramServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:838 __init__ calls=2 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:155 BaseServer calls=1 tottime=0.000002s cumtime=0.000002s
+run1: socketserver.py:392 TCPServer calls=1 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:557 ForkingMixIn calls=1 tottime=0.000001s cumtime=0.000001s
+run1: simple_server.py:48 server_bind calls=1 tottime=0.000004s cumtime=0.005681s
+run1: socketserver.py:203 __init__ calls=1 tottime=0.000004s cumtime=0.000010s
+run1: socketserver.py:528 UDPServer calls=1 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:678 ThreadingMixIn calls=1 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:343 process_request calls=2 tottime=0.000007s cumtime=0.005540s
+run1: socketserver.py:481 server_activate calls=1 tottime=0.000002s cumtime=0.000007s
+run1: socketserver.py:645 _Threads calls=1 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:360 finish_request calls=2 tottime=0.000010s cumtime=0.005507s
+run1: socketserver.py:523 close_request calls=2 tottime=0.000001s cumtime=0.000008s
+run1: socketserver.py:667 _NoThreads calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:727 UnixStreamServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:730 UnixDatagramServer calls=1 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:852 DatagramRequestHandler calls=1 tottime=0.000001s cumtime=0.000001s
+run1: socketserver.py:257 service_actions calls=25 tottime=0.000018s cumtime=0.000018s
+run1: socketserver.py:335 verify_request calls=2 tottime=0.000000s cumtime=0.000000s
+run1: socketserver.py:760 __init__ calls=2 tottime=0.000010s cumtime=0.005497s
+run1: socketserver.py:844 write calls=10 tottime=0.000014s cumtime=0.000052s
+run1: socket.py:1 <module> calls=1 tottime=0.000052s cumtime=0.001562s
+run1: socket.py:307 makefile calls=2 tottime=0.000037s cumtime=0.000046s
+run1: socket.py:218 socket calls=1 tottime=0.000004s cumtime=0.000005s
+run1: socket.py:712 readinto calls=2 tottime=0.000004s cumtime=0.000013s
+run1: ssl.py:978 SSLSocket calls=1 tottime=0.000008s cumtime=0.000014s
+run1: socketserver.py:305 _handle_request_noblock calls=2 tottime=0.000021s cumtime=0.005681s
+run1: socketserver.py:218 serve_forever calls=1 tottime=0.000310s cumtime=12.200636s
+run1: socketserver.py:463 server_bind calls=1 tottime=0.000007s cumtime=0.001257s
+run1: socketserver.py:809 setup calls=2 tottime=0.000017s cumtime=0.000063s
+run1: socketserver.py:1 <module> calls=1 tottime=0.000010s cumtime=0.000705s
+run2: socket.py:291 accept calls=2 tottime=0.000035s cumtime=0.000103s
+run2: ~:0 <built-in method _socket.gethostbyaddr> calls=1 tottime=0.001799s cumtime=0.002648s
+run2: ~:0 <built-in method _socket.getdefaulttimeout> calls=2 tottime=0.000001s cumtime=0.000001s
+run2: ~:0 <method '_accept' of '_socket.socket' objects> calls=2 tottime=0.000019s cumtime=0.000019s
+run2: ~:0 <method 'bind' of '_socket.socket' objects> calls=1 tottime=0.001105s cumtime=0.001105s
+run2: ~:0 <function socket.close at 0x1010a62a0> calls=3 tottime=0.000068s cumtime=0.000068s
+run2: ~:0 <method 'fileno' of '_socket.socket' objects> calls=1 tottime=0.000000s cumtime=0.000000s
+run2: ~:0 <method 'getsockname' of '_socket.socket' objects> calls=1 tottime=0.000003s cumtime=0.000003s
+run2: ~:0 <method 'listen' of '_socket.socket' objects> calls=1 tottime=0.000003s cumtime=0.000003s
+run2: ~:0 <method 'recv_into' of '_socket.socket' objects> calls=2 tottime=0.000009s cumtime=0.000009s
+run2: ~:0 <method 'sendall' of '_socket.socket' objects> calls=10 tottime=0.000061s cumtime=0.000061s
+run2: ~:0 <method 'gettimeout' of '_socket.socket' objects> calls=2 tottime=0.000001s cumtime=0.000001s
+run2: ~:0 <method 'setsockopt' of '_socket.socket' objects> calls=1 tottime=0.000003s cumtime=0.000003s
+run2: ~:0 <method 'shutdown' of '_socket.socket' objects> calls=2 tottime=0.000014s cumtime=0.000014s
+run2: socket.py:503 _real_close calls=3 tottime=0.000005s cumtime=0.000073s
+run2: socket.py:215 _GiveupOnSendfile calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socket.py:102 _intenum_converter calls=4 tottime=0.000015s cumtime=0.000032s
+run2: socket.py:523 family calls=2 tottime=0.000007s cumtime=0.000035s
+run2: socket.py:529 type calls=2 tottime=0.000001s cumtime=0.000006s
+run2: socket.py:224 __init__ calls=3 tottime=0.000029s cumtime=0.000029s
+run2: socket.py:81 <lambda> calls=248 tottime=0.000037s cumtime=0.000062s
+run2: socket.py:86 <lambda> calls=249 tottime=0.000033s cumtime=0.000056s
+run2: socket.py:91 <lambda> calls=250 tottime=0.000032s cumtime=0.000053s
+run2: socket.py:96 <lambda> calls=251 tottime=0.000031s cumtime=0.000053s
+run2: socket.py:507 close calls=3 tottime=0.000006s cumtime=0.000079s
+run2: socket.py:750 readable calls=4 tottime=0.000002s cumtime=0.000002s
+run2: socket.py:683 SocketIO calls=1 tottime=0.000002s cumtime=0.000002s
+run2: socket.py:497 _decref_socketios calls=2 tottime=0.000002s cumtime=0.000002s
+run2: socket.py:788 close calls=2 tottime=0.000005s cumtime=0.000008s
+run2: server.py:146 server_bind calls=1 tottime=0.000005s cumtime=0.003775s
+run2: socket.py:700 __init__ calls=2 tottime=0.000013s cumtime=0.000013s
+run2: socket.py:799 getfqdn calls=1 tottime=0.000005s cumtime=0.002653s
+run2: socketserver.py:489 server_close calls=1 tottime=0.000003s cumtime=0.000070s
+run2: socketserver.py:497 fileno calls=1 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:505 get_request calls=2 tottime=0.000016s cumtime=0.000119s
+run2: socketserver.py:742 BaseRequestHandler calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:788 StreamRequestHandler calls=1 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:833 _SocketWriter calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:513 shutdown_request calls=2 tottime=0.000006s cumtime=0.000034s
+run2: socketserver.py:450 __init__ calls=1 tottime=0.000006s cumtime=0.003818s
+run2: socketserver.py:822 finish calls=2 tottime=0.000005s cumtime=0.000021s
+run2: socketserver.py:719 ForkingUDPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:720 ForkingTCPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:722 ThreadingUDPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:723 ThreadingTCPServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:733 ThreadingUnixStreamServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:735 ThreadingUnixDatagramServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:738 ForkingUnixStreamServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:740 ForkingUnixDatagramServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:838 __init__ calls=2 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:155 BaseServer calls=1 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:392 TCPServer calls=1 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:557 ForkingMixIn calls=1 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:343 process_request calls=2 tottime=0.000007s cumtime=0.004606s
+run2: socketserver.py:481 server_activate calls=1 tottime=0.000001s cumtime=0.000004s
+run2: socketserver.py:645 _Threads calls=1 tottime=0.000001s cumtime=0.000001s
+run2: simple_server.py:48 server_bind calls=1 tottime=0.000002s cumtime=0.003778s
+run2: socketserver.py:203 __init__ calls=1 tottime=0.000003s cumtime=0.000009s
+run2: socketserver.py:528 UDPServer calls=1 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:678 ThreadingMixIn calls=1 tottime=0.000001s cumtime=0.000001s
+run2: socketserver.py:360 finish_request calls=2 tottime=0.000013s cumtime=0.004564s
+run2: socketserver.py:523 close_request calls=2 tottime=0.000002s cumtime=0.000014s
+run2: socketserver.py:667 _NoThreads calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:727 UnixStreamServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:730 UnixDatagramServer calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:852 DatagramRequestHandler calls=1 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:257 service_actions calls=24 tottime=0.000022s cumtime=0.000022s
+run2: socketserver.py:335 verify_request calls=2 tottime=0.000000s cumtime=0.000000s
+run2: socketserver.py:760 __init__ calls=2 tottime=0.000010s cumtime=0.004551s
+run2: socketserver.py:844 write calls=10 tottime=0.000018s cumtime=0.000082s
+run2: socket.py:307 makefile calls=2 tottime=0.000029s cumtime=0.000044s
+run2: socket.py:218 socket calls=1 tottime=0.000004s cumtime=0.000005s
+run2: socket.py:712 readinto calls=2 tottime=0.000005s cumtime=0.000017s
+run2: ssl.py:978 SSLSocket calls=1 tottime=0.000006s cumtime=0.000012s
+run2: socketserver.py:218 serve_forever calls=1 tottime=0.000385s cumtime=11.251075s
+run2: socketserver.py:305 _handle_request_noblock calls=2 tottime=0.000011s cumtime=0.004736s
+run2: socketserver.py:463 server_bind calls=1 tottime=0.000004s cumtime=0.001116s
+run2: socketserver.py:809 setup calls=2 tottime=0.000011s cumtime=0.000055s
+run2: socket.py:1 <module> calls=1 tottime=0.000043s cumtime=0.001402s
+run2: socketserver.py:1 <module> calls=1 tottime=0.000010s cumtime=0.000684s
+Average server_bind cumulative time: 0.003547s
