@@ -1,12 +1,6 @@
-import re
-import pdb
-
 from bottle import request
+from myform_mail import is_valid_email
 from routes import app
-
-EMAIL_PATTERN = re.compile(
-    r'^[A-Za-z0-9](?:[A-Za-z0-9._%+-]*[A-Za-z0-9])?@[A-Za-z]+(?:\.[A-Za-z]+)+$'
-)
 
 questions = {}
 
@@ -28,11 +22,9 @@ def my_form():
     if missing_fields:
         return 'Please fill in all fields: %s.' % ', '.join(missing_fields)
 
-    if not mail.isascii() or not EMAIL_PATTERN.fullmatch(mail):
+    if not is_valid_email(mail):
         return 'Please enter a valid email address.'
 
     questions[mail] = [username, question]
-
-    pdb.set_trace()
 
     return 'Thanks, %s! The answer will be sent to the mail %s' % (username, mail)

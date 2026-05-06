@@ -1,0 +1,5 @@
+{
+    "TestFramework": "unittest",
+    "UnitTestRootDirectory": ".",
+    "UnitTestPattern": "utest_*.py"
+}
