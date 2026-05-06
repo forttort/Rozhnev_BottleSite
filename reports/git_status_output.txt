@@ -1,0 +1,14 @@
+$ git branch --show-current
+codex/lr9-12
+
+$ git log --oneline --decorate -6
+79d5b2d (HEAD -> codex/lr9-12, origin/codex/lr9-12) Update lab report for PyCharm workflow
+e26d76c Add lab report and verification artifacts
+2480a1b Add lab tests and email validation
+ca7261b (origin/main, origin/HEAD, main) change dictionary
+614201f commit 2
+b0dbf69 add button
+
+$ git remote -v
+origin	git@github.com:forttort/Rozhnev_BottleSite.git (fetch)
+origin	git@github.com:forttort/Rozhnev_BottleSite.git (push)

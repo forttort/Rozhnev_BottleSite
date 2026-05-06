@@ -1,0 +1,8 @@
+$ curl -s -o /tmp/home.html -w "%{http_code} %{size_download}\n" http://localhost:8080/
+200 4262
+
+$ curl -s -X POST http://localhost:8080/home -d USERNAME=Ivan -d QUEST=Hello -d ADRESS=ivan@example.com
+Thanks, Ivan! The answer will be sent to the mail ivan@example.com
+
+$ curl -s -X POST http://localhost:8080/home -d USERNAME=Ivan -d QUEST=Hello -d ADRESS=ivan@m.ru
+Please enter a valid email address.
