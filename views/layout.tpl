@@ -13,6 +13,7 @@
         <nav class="site-nav">
             <a href="/">Главная</a>
             <a href="/about">О магазине</a>
+            <a href="/orders">Оформленные заказы</a>
             <a href="/contact">Контакты</a>
         </nav>
     </header>
